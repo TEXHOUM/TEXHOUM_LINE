@@ -7,11 +7,19 @@
 
 class LINE {
 public:
-	LINE(byte pin_INPUT);  //	Инициализация (analog pin)
-	uint16_t get();  //	Определение уровня освещённости
+	LINE(byte pin_INPUT);      //	Инициализация (analog pin)
+	byte _pin_INPUT;           //	Номер вывода, подключённого к оптопаре
+	int16_t get();             //	Определение уровня освещённости
+	int16_t min_series_value;  // Значение серии устойчивых минимальных значений
+	int16_t max_series_value;  // Значение серии устойчивых максимальных значений
+	int16_t current_value;     // Текущее значение
+	int16_t previous_value;    // Предыдущее значение
+	uint16_t series_length;    // Длина текущей серии значений
+	int16_t border;            // Пороговое значение между чёрным и белым
 private:
-	byte _pin_INPUT;       //	Номер вывода подключённого к оптопаре
 };
+
+void monitoring();  // выводит в монитор порта текущие показания датчиков, значение на черном, значение на белом, и пороговое значение
 
 extern LINE IR1;
 extern LINE IR2;

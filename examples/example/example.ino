@@ -1,7 +1,7 @@
 #include <TEXHOUM_LINE.h>
 
 void setup() {
-  Serial.begin(9600);
+  monitoring();
 }
 
 void loop() {
