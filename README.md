@@ -1,6 +1,6 @@
 # TEXHOUM\_LINE
 
-## Данная библиотека для Arduino IDE позволяет работать с аналоговым датчиком линии TEXHOUM
+### Данная библиотека для Arduino IDE позволяет работать с аналоговым датчиком линии TEXHOUM
 Библиотека выводит показания 5 сенсоров аналогового датчика линии.
 Также её можно использовать для калибровки датчика с выводом в монитор порта значений в реальном времени и рассчётом порога между чёрным и белым.
 
@@ -44,7 +44,7 @@ monitoring();  // выводит в монитор порта текущие п�
 
 ---
 
-## This library for Arduino IDE allows working with the analog line sensor TEXHOUM
+### This library for Arduino IDE allows working with the analog line sensor TEXHOUM
 
 The library outputs readings of 5 sensors of the analog line sensor.
 It can also be used to calibrate the sensor by displaying real-time values ​​on the port monitor and calculating the threshold between black and white.
